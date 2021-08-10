@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap");
+/* 
+    font-family: 'Rubik', sans-serif; 
+*/
+
+:root {
+  --color-white: #ffffff;
+  --color-theme: #fe6600;
+  --color-dark: #212529;
+
+  --color-light-gray: #f5f5f5;
+  --color-dark-gray: #5c5c5c;
+
+  --color-text-1: rgb(255, 255, 255);
+  --color-text-2: #999;
+
+  --font-primary: "Rubik", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-primary);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  background: rgb(219, 219, 219);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(134, 134, 134);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #696969;
+  box-shadow: inset 0 0 5px grey;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #969696;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+p,
+li {
+  font-size: 1rem;
+  font-family: var(--font-primary);
+  font-weight: 300;
+}
+
+.sub__header {
+  font-size: 22px;
+}
+
+/* ===================================
+
+    #base style 
+    
+======================================*/
+
+.body__wrap {
+  position: relative;
+}
+
+/* ===================================
+
+    #body header
+    
+======================================*/
+
+.nav__link {
+  color: #161616;
+  font-weight: 400;
+}
+
+/* ===================================
+
+    #body footer 
+    
+======================================*/
+
+/* ===================================
+
+    #body banner
+    
+======================================*/
+
+.body__banner {
+  background-image: url("../img/bg/001.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.banner__container ul li::before {
+  content: "\203A";
+  padding-right: 10px;
+  font-weight: 600;
+}
+
+/* ===================================
+
+    #body container
+    
+======================================*/
+
+.section__service .section__block {
+  border: 1px solid #e8e8e8;
+  padding: 20px 25px;
+  border-radius: 20px;
+}
+
+.section__tech figure {
+  width: 100px;
+  height: 100px;
+}
+
+.section__tech img {
+  width: 80px;
+  height: 100px;
+}
+
+/* ====================================
+
+
+
+======================================*/
+.section__testimonial {
+  background-image: url("../img/icon/bg.svg");
+}
+
+.testimonial__block {
+  text-align: center;
+}
+
+blockquote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 200px;
+  /* background-color: #969696; */
+  background-color: #f7f7f7;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+blockquote p {
+  font-size: 1.1rem;
+}
+
+/* blockquote strong {
+  color: 
+} */
+
+/* ====================================
+
+  BODY FOOTER
+
+======================================*/
+.body__footer {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='100%' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1077%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(20%2c 54%2c 89%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c441.405C97.468%2c465.227%2c205.971%2c505.496%2c294.438%2c458.155C383.254%2c410.627%2c404.382%2c295.406%2c445.047%2c203.246C485.175%2c112.301%2c556.774%2c19.56%2c530.232%2c-76.236C503.722%2c-171.917%2c385.668%2c-203.466%2c313.476%2c-271.628C250.349%2c-331.231%2c215.069%2c-424.465%2c132.617%2c-451.652C49.537%2c-479.046%2c-36.203%2c-432.712%2c-121.91%2c-415.187C-216.474%2c-395.85%2c-319.558%2c-401.893%2c-396.396%2c-343.479C-480.477%2c-279.559%2c-570.698%2c-186.019%2c-561.802%2c-80.775C-552.649%2c27.507%2c-423.494%2c78.235%2c-353.707%2c161.533C-305.32%2c219.287%2c-273.584%2c287.013%2c-214.498%2c333.765C-150.467%2c384.43%2c-79.316%2c422.019%2c0%2c441.405' fill='%23112d4b'%3e%3c/path%3e%3cpath d='M1440 1066.268C1552.549 1064.476 1664.001 1110.3719999999998 1770.7440000000001 1074.647 1893.591 1033.532 2035.674 973.98 2079.741 852.1600000000001 2123.998 729.814 2019.8200000000002 607.0360000000001 1985.27 481.602 1955.7640000000001 374.48 1970.316 247.09199999999998 1891.504 168.76999999999998 1813.556 91.30799999999999 1688.475 102.69999999999999 1580.988 79.83699999999999 1482.403 58.86700000000002 1384.069 11.76400000000001 1287.394 40.27200000000005 1190.755 68.769 1138.452 166.73399999999998 1062.359 232.772 971.0360000000001 312.027 819.779 348.89 795.329 467.31 771.1 584.662 895.125 677.176 948.4490000000001 784.484 999.611 887.441 1002.677 1028.1100000000001 1102.4189999999999 1085.287 1202.219 1142.498 1324.98 1068.099 1440 1066.268' fill='%23173f67'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1077'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.body__footer header {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px 0 15px;
+}
+
+.body__footer p,
+.body__footer li {
+  font-size: 0.9rem;
+}
+
+.body__footer ul li {
+  padding-bottom: 10px;
+}
+
+.copyright {
+  background-color: rgba(0, 0, 0, 0.301);
+  padding: 10px;
+  text-align: center;
+}
+
+.copyright p {
+  color: #fff;
+  margin: 0;
+}
+
+.footer__social-media{
+  margin-top: 15px;
+}
+
+.footer__social-media li + li {
+  margin-left: 20px;
+}
+
+.footer__social-media a {
+  color: #fff;
+  display: inline-block;
+  /* width: 40px;
+  height: 40px; 
+  line-height: 50px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px; */
+  text-align: center;
+  transition: ease-in-out 300ms;
+  -webkit-transition: ease-in-out 300ms;
+  -moz-transition: ease-in-out 300ms;
+  -ms-transition: ease-in-out 300ms;
+  -o-transition: ease-in-out 300ms;
+}
+
+/* .footer__social-media a:hover {
+  background-color: rgb(32, 172, 214);
+  border-color: rgb(112, 211, 241);
+} */
+
+/* .footer__social-media a>i {
+  font-size: 24px;
+} */
