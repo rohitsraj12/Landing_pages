@@ -5,7 +5,7 @@
 
   .body__header {
     width: 100%;
-    background-color: #ffffffee;
+    /* background-color: #ffffffee; */
     /* position: absolute;
     top: 0;
     left: 0; */
@@ -40,6 +40,36 @@
   .body__banner {
     min-height: 80vh;
     /* background-color: rgb(45, 131, 131); */
+    position: relative;
+  }
+
+  .body__banner::before{
+    content: "PRAGUM";
+    font-family: var(--font-primary);
+    font-size: 8rem;
+    font-weight: 900;
+    color: rgba(0, 175, 223, 0.097);
+    
+
+    position: absolute;
+    bottom: 1%;
+    left: 0;
+    z-index: -1;
+    
+  }
+
+  .body__wrap::after {
+    content: "";
+    width: 900px;
+    height:  900px;
+    background-image: url(../img/icon/bg-banner.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    z-index: -3;
+    opacity: 0.2;
   }
 
   .wrap__banner-container,
@@ -63,6 +93,18 @@
 
   .banner__form > div {
     background: #ffffffef;
+  }
+
+  .banner__header h1 {
+    font-size: 4rem;
+    font-weight: 400;
+  }
+  
+.banner__header strong {
+  font-weight: 700;
+}
+  .banner__container p {
+    font-size: 1.6rem;
   }
 
   /* ===================================
