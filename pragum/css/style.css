@@ -1,3 +1,13 @@
+/* ========================================
++
++   Developer : Rohit (rohitwebco@gmail.com)
++   Github    : https://github.com/rohitsraj12/
++   Supporting developers: Sanghamitra & Kiran
++   Date      : 12 Aug 2021
++
+===========================================*/
+
+
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap");
 /* 
@@ -120,6 +130,10 @@ li {
   content: "\203A";
   padding-right: 10px;
   font-weight: 600;
+}
+
+.banner__header strong {
+  color: rgb(22, 151, 197);
 }
 
 /* ===================================
@@ -252,3 +266,21 @@ blockquote p {
 /* .footer__social-media a>i {
   font-size: 24px;
 } */
+
+.msg__btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  color: #ffffff;
+  font-size: 30px;
+  background-color: #2cb7e9;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
