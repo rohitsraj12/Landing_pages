@@ -165,6 +165,10 @@
     opacity: 1;
     bottom: 0;
   }
+
+  .mobile__fixed {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -207,5 +211,38 @@
 
   .banner__form {
     background-color: rgba(238, 238, 238, 0.932);
+  }
+
+  .body__footer {
+    margin-bottom: 40px;
+  }
+
+  .msg__btn {
+    display: none;
+  }
+
+  .mobile__fixed {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top:1px solid rgb(149, 232, 255);
+  }
+
+  .mobile__fixed ul li + li {
+    border-left: 1px solid rgb(149, 232, 255);
+  }
+
+  .mobile__fixed ul li a{
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+  }
+  .mobile__fixed ul li:first-child {
+    background-color:rgb(30, 142, 194);
+  }
+  .mobile__fixed ul li:last-child {
+    background-color:rgb(42, 182, 247);
   }
 }
