@@ -2,10 +2,11 @@
 
 if(isset($_POST['enquiry_form'])){
 
-    $name = &_POST['name'];
-    $phone = &_POST['phone'];
-    $email = &_POST['email'];
-    $message = &_POST['message'];
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $service = $_POST['service'];
 
 
     //send email to
@@ -18,6 +19,7 @@ if(isset($_POST['enquiry_form'])){
     $message .= "<p> name: <strong>". $name ."</strong></p></br>";
     $message .= "<p> phone number: <strong>". $phone ."</strong></p></br>";
     $message .= "<p> email: <strong>". $email ."</strong></p></br>";
+    $message .= "<p> Service: <strong>". $service ."</strong></p></br>";
     $message .= "<p> Message: <strong>". $message ."</strong></p></br>";
     $message .= "<p>Thank you,</p>";
     $message .= "<p>". $name ."</p>";
