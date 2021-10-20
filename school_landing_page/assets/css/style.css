@@ -1,0 +1,185 @@
+/* ========================================
++
++   Developer : Rohit (rohitwebco@gmail.com)
++   Github    : https://github.com/rohitsraj12/
++   Date      : 19 Oct 2021
++
+===========================================*/
+
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap");
+/* 
+    font-family: 'Rubik', sans-serif; 
+*/
+
+:root {
+  --color-white: #ffffff;
+  --color-theme: #e63d53;
+  --color-dark: #212529;
+
+  --color-light-gray: #f5f5f5;
+  --color-dark-gray: #5c5c5c;
+
+  --color-text-1: rgb(255, 255, 255);
+  --color-text-2: #999;
+
+  --font-primary: "Rubik", sans-serif;
+  --font-secondary: "Charmonman", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-primary);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  background: rgb(219, 219, 219);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(134, 134, 134);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #696969;
+  box-shadow: inset 0 0 5px grey;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #969696;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+strong {
+    font-weight: 400;
+}
+
+p,
+li {
+  font-size: 1rem;
+  font-family: var(--font-primary);
+  font-weight: 400;
+}
+
+.section__header {
+    padding-bottom: 30px;
+}
+
+.sub__header {
+  font-family: var(--font-primary);
+  font-size: 20px;
+  font-weight: 400;
+  color: #515151;
+}
+
+.red {
+    color: var(--color-theme);
+}
+
+.under__line {
+    position: relative;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+.under__line::after {
+    content: "";
+    width: 4%;
+    height: 2px;
+    background-color: var(--color-theme);
+    position: absolute;
+    bottom: -10px;
+    left: 48%;
+}
+.under__line::before {
+    content: "";
+    width: 4px;
+    height: 11px;
+    background-color: var(--color-theme);
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+}
+
+.header__text {
+    font-size: 42px;
+}
+
+/* ===========================================
+
+    #default styling
+
+===============================================*/
+.body__wrap {
+    position: relative;
+}
+
+/* ===========================================
+
+    #body header
+
+===============================================*/
+.non__fixed-header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    /* background-color: rgba(7, 7, 7, 0.133); 
+    border-bottom: 1px solid rgba(33, 33, 33, 0.356);*/
+}
+
+/*  header nav
+============================================= */
+.nav__link {
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+/* ===========================================
+
+    #body footer
+
+===============================================*/
+
+
+/* ===========================================
+
+    #body banner
+
+===============================================*/
+
+
+/* ===========================================
+
+    #body container
+
+===============================================*/
