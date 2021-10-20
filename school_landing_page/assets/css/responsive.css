@@ -1,0 +1,112 @@
+@media(min-width: 769px){
+
+    .hamburger {
+        display: none;
+    }
+
+    .body__header header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    padding: 30px 0 25px;
+
+    }
+
+    .header__nav ul {
+        display: flex;
+    }
+
+    /*  header nav
+    ============================================= */
+    .nav__list + li {
+        margin-left: 40px;
+    }
+    
+    .nav__link:hover {
+        color: var(--color-theme);
+        transition: ease-in-out 300ms;
+        -webkit-transition: ease-in-out 300ms;
+        -moz-transition: ease-in-out 300ms;
+        -ms-transition: ease-in-out 300ms;
+        -o-transition: ease-in-out 300ms;
+    }
+
+    /* ===========================================
+
+        #body footer
+
+    ===============================================*/
+    .banner__sm {
+        display: none;
+    }
+
+    .banner__lg {
+        width: 100%;
+        height: 100vh;
+    }
+
+}
+
+@media(max-width: 768px){
+    .hamburger {
+        position: absolute;
+        top: 20px;
+        right: 2%;
+        background-color: var(--color-theme);
+        padding: 10px 15px 7px;
+    }
+
+    .hamburger i {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .body__header {
+        /* background-color: rgba(237, 237, 237, 0.767); */
+    padding: 30px 0 10px;
+    background-color: rgba(9, 9, 9, 0.459);
+
+    }
+
+    .header__brand {
+        margin-bottom: 20px;
+        /* text-align: center; */
+    }
+
+    .header__nav {
+        text-align: center;
+        width: 100%;
+        padding: 4px 0;
+        position: absolute;
+        left: 0;
+        background-color: rgba(9, 9, 9, 0.459);
+        display: none;
+    }
+
+    .nav__link {
+        display: block;
+        margin-bottom: 1px;
+        padding: 8px 0;
+        background-color: #232323c9;
+        /* background-color: var(--color-theme); */
+    }
+
+    
+    /* ===========================================
+
+        #body footer
+
+    ===============================================*/
+    .banner__lg {
+        display: none;
+    }
+
+    .banner__sm {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media(max-width: 768px) and (min-width: 575px){
+    
+}
