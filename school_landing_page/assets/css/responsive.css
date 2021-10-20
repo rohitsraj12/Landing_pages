@@ -63,9 +63,8 @@
 
     .body__header {
         /* background-color: rgba(237, 237, 237, 0.767); */
-    padding: 30px 0 10px;
-    background-color: rgba(9, 9, 9, 0.459);
-
+        padding: 30px 0 10px;
+        background-color: rgba(9, 9, 9, 0.459);
     }
 
     .header__brand {
