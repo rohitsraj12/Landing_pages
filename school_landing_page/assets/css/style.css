@@ -262,7 +262,7 @@ li {
   -o-border-radius: 2px;
 }
 
-.section__feature > div {
+.section__feature .row {
   align-items: stretch;
   height: 100%;
   padding: 0;
