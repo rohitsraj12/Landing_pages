@@ -234,7 +234,13 @@ li {
     #body footer
 
 ===============================================*/
+.body__footer {
+  background-color: var(--color-theme);
+}
 
+.copy__right {
+  background-color: #b3162b;
+}
 
 /* ===========================================
 
