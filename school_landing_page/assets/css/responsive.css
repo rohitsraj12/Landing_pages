@@ -45,6 +45,20 @@
         height: 100vh;
     }
 
+    .testimonial__container {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .iframe__map {
+        width: 100%;
+        min-height: 600px;
+    }
+
+    .section__contact .container > div {
+        align-items: stretch;
+    }
+
 }
 
 @media(max-width: 768px){
