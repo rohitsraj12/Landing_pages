@@ -261,6 +261,96 @@ li {
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
 }
+/* 
+============================================== */
+.course__header {
+  font-family: var(--font-primary);
+  font-size: 22px;
+  font-weight: 400;
+}
+.section__course {
+  position: relative;
+  padding-bottom: 70px;
+}
+
+.section__course::before {
+  content: "";
+  width: 100%;
+  height: 200px;
+  background-color: #ececec;
+  position: absolute;
+  bottom: 0px;
+  z-index: -1;
+}
+
+.course__body article {
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  transition: ease-in-out 300ms;
+  -webkit-transition: ease-in-out 300ms;
+  -moz-transition: ease-in-out 300ms;
+  -ms-transition: ease-in-out 300ms;
+  -o-transition: ease-in-out 300ms;
+}
+
+.course__body article:hover {
+  transform: translateY(-6px);
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  -o-transform: translateY(-6px);
+}
+
+.course__body header {
+  padding: 10px 0 0;
+}
+
+.course__body figure{
+  margin: 0;
+  padding: 3px;
+  /* border: 1px solid #d0d0d0; */
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.course__body img {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+/* section brochure
+============================================== */
+.section__brochure {
+  background-color: #ececec;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.section__brochure header h5{
+  padding-bottom: 20px;
+  font-family: var(--font-primary);
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.section__brochure header h6{
+  font-family: var(--font-primary);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* 
+============================================== */
 
 .section__feature .row {
   align-items: stretch;
@@ -314,3 +404,82 @@ li {
   color: #fff;
   line-height: 60px;
 } 
+
+/*  Section fecility
+================================================ */
+.section__fecility {
+  background-color: #ececec;
+
+}
+
+.fecility__icon {
+  margin: 0 auto 10px;
+  width: 100px;
+  height: 100px;
+  background-color: var(--color-theme);
+  line-height: 100px;
+  outline: var(--color-theme) solid 1px;
+  outline-offset: 2px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: ease-in-out 300ms;
+  -webkit-transition: ease-in-out 300ms;
+  -moz-transition: ease-in-out 300ms;
+  -ms-transition: ease-in-out 300ms;
+  -o-transition: ease-in-out 300ms;
+}
+
+.fecility__block {
+  transition: ease-in-out 300ms;
+  -webkit-transition: ease-in-out 300ms;
+  -moz-transition: ease-in-out 300ms;
+  -ms-transition: ease-in-out 300ms;
+  -o-transition: ease-in-out 300ms;
+}
+
+.fecility__block:hover {
+  transform: translateY(-8px);
+  -webkit-transform: translateY(-8px);
+  -moz-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
+  -o-transform: translateY(-8px);
+}
+
+.fecility__block:hover .fecility__icon{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  outline: var(--color-theme) solid 1px;
+  outline-offset: 4px;
+}
+
+.fecility__block header {
+    font-family: var(--font-primary);
+    font-size: 20px;
+    font-weight: 400;
+    color: #464646;
+  
+}
+
+/*  Section testimonial
+================================================ */
+.section__testimonial {
+  background-image: url(../img/bg/bg-pattern-1.png);
+}
+
+.carousel-indicators {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.carousel-indicators [data-bs-target] {
+  border: 1px solid #e8e8e8;
+  background-color:rgb(38, 33, 33);
+  width: 5px;
+  height: 15px;
+  margin-right: 3px;
+}
+.carousel-indicators .active {
+  height: 30px;
+  background-color: var(--color-theme);
+}
