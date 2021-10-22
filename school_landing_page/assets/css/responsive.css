@@ -59,6 +59,28 @@
         align-items: stretch;
     }
 
+    /* footer nav
+    ==================================== */
+    .footer__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer__nav a {
+        color: #fff;
+        font-weight: 400;
+    }
+
+    .footer__nav li::after {
+        content: "|";
+        margin: 0 30px;
+        color: #fff;
+    }
+    
+    .footer__nav li:last-child::after  {
+    content: " ";        
+    }
 }
 
 @media(max-width: 768px){
