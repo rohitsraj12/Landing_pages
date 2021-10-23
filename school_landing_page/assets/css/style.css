@@ -220,6 +220,21 @@ li {
     border-bottom: 1px solid rgba(33, 33, 33, 0.356);*/
 }
 
+.fixed-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: ease-in-out 700ms;
+    -webkit-transition: ease-in-out 700ms;
+    -moz-transition: ease-in-out 700ms;
+    -ms-transition: ease-in-out 700ms;
+    -o-transition: ease-in-out 700ms;
+}
+
 /*  header nav
 ============================================= */
 .nav__link {
@@ -495,4 +510,29 @@ li {
 .carousel-indicators .active {
   height: 30px;
   background-color: var(--color-theme);
+}
+
+/* sticky button */
+.sticky__enquiry{
+  position: fixed;
+  text-align: center;
+  z-index: 99;
+}
+
+.sticky__enquiry a {
+  display: inline-block;
+  padding-top: 5px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-theme);
+  color: #fff;
+  font-size: 30px;
+  line-height: 60x;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 0 0 15px rgba(18, 16, 16, 0.534);
+  border: 1px solid #c92b2b;
 }
