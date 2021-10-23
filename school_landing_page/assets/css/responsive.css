@@ -8,8 +8,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    padding: 30px 0 25px;
-
+        padding: 30px 0 25px;
     }
 
     .header__nav ul {
@@ -29,6 +28,10 @@
         -moz-transition: ease-in-out 300ms;
         -ms-transition: ease-in-out 300ms;
         -o-transition: ease-in-out 300ms;
+    }
+
+    .fixed-header .nav__link {
+        color: #111111;
     }
 
     /* ===========================================
@@ -76,6 +79,11 @@
     .footer__nav li:last-child::after  {
     content: " ";        
     }
+
+    .sticky__enquiry {
+        right: 40px;
+        bottom: 30px;
+    }
 }
 
 @media(max-width: 768px){
@@ -95,7 +103,7 @@
     .body__header {
         /* background-color: rgba(237, 237, 237, 0.767); */
         padding: 30px 0 10px;
-        background-color: rgba(9, 9, 9, 0.459);
+        background-color: rgba(255, 255, 255);
     }
 
     .header__brand {
@@ -106,19 +114,39 @@
     .header__nav {
         text-align: center;
         width: 100%;
-        padding: 4px 0;
+        height: 90vh;
+        padding: 30px 0;
         position: absolute;
         left: 0;
-        background-color: rgba(9, 9, 9, 0.459);
+        background-color: rgb(46, 46, 46);
         display: none;
     }
 
     .nav__link {
         display: block;
-        margin-bottom: 1px;
+        /* margin-bottom: 1px; */
         padding: 8px 0;
-        background-color: #232323c9;
+        border-bottom: 1px solid #111111;
+        /* background-color: #232323c9; */
         /* background-color: var(--color-theme); */
+    }
+
+    
+    .nav__list:first-child .nav__link {
+        border-top: 1px solid #111111;
+
+    }
+ 
+    .nav__list:last-child {
+        /* margin-top: 30px; */
+        border-top: 4px solid rgba(111, 111, 111, 0.507);
+        border-bottom: 4px solid rgba(111, 111, 111, 0.507);
+    }
+
+    
+
+    .nav__list:last-child .nav__link {
+        background-color: var(--color-theme);
     }
 
     
@@ -134,6 +162,13 @@
     .banner__sm {
         width: 100%;
         height: 100vh;
+    }
+
+    
+
+    .sticky__enquiry {
+        right: 10px;
+        bottom: 10px;
     }
 }
 
