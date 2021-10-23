@@ -512,7 +512,8 @@ li {
   background-color: var(--color-theme);
 }
 
-/* sticky button */
+/* sticky button 
+====================================================*/
 .sticky__enquiry{
   position: fixed;
   text-align: center;
