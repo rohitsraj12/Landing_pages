@@ -3,6 +3,18 @@ $(document).ready(function(){
 
     const mediaQuery = window.innerWidth;
 
+    //modal 
+    $(".modal__open").click(function(){
+       var header = $(this).attr("data-button");
+       var name = $(this).attr("data-name");
+
+       $(".modal-title").text(header);
+       $(".modal-submit").attr("name", name)
+    // alert(name);
+    })
+
+
+    // media query
     if(mediaQuery < 768){
         //small device
         $(".hamburger").click(function(){
@@ -30,7 +42,6 @@ $(document).ready(function(){
                 // console.log(2000);
             }
         });
-
     } else {
         // large device
         $(window).scroll(function () {
