@@ -9,8 +9,6 @@
         $message = $_POST['message'];
 
         echo "$parent_name, $student_name, $phone, $email, $message";
-
-
     }
 
 
