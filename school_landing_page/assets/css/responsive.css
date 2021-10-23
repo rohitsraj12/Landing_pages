@@ -87,12 +87,40 @@
 }
 
 @media(max-width: 768px){
+    .header__text {
+        font-size: 30px;
+    }
+
+    .sub__header {
+        font-size: 17px;
+    }
+
     .hamburger {
         position: absolute;
         top: 20px;
         right: 2%;
         background-color: var(--color-theme);
         padding: 10px 15px 7px;
+    }
+
+    .under__line::after {
+        width: 13%;
+        left: 44%;
+
+    } 
+    
+    .under__line-left::after {
+        
+        width: 13%;
+        left: 44%;
+    }
+
+    .under__line-left::before {
+        left: 50%;   
+    }
+
+    .section__feature-right .section__header {
+        text-align: center;
     }
 
     .hamburger i {
@@ -147,6 +175,12 @@
 
     .nav__list:last-child .nav__link {
         background-color: var(--color-theme);
+    }
+
+    
+    .iframe__map {
+        width: 100%;
+        min-height: 400px;
     }
 
     
