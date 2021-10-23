@@ -67,11 +67,6 @@
         justify-content: center;
     }
 
-    .footer__nav a {
-        color: #fff;
-        font-weight: 400;
-    }
-
     .footer__nav li::after {
         content: "|";
         margin: 0 30px;
