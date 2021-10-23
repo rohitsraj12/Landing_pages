@@ -234,6 +234,13 @@ li {
     #body footer
 
 ===============================================*/
+
+
+.footer__nav a {
+  color: #fff;
+  font-weight: 400;
+}
+
 .body__footer {
   background-color: var(--color-theme);
 }
