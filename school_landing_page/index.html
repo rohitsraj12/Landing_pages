@@ -199,7 +199,7 @@
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, voluptatem illum asperiores tenetur, loerm aasdsad ddak kkdsdsls.
                                                     </p>
                                                     <footer>
-                                                        <button class="btn btn__primary">Enquire Now</button>
+                                                        <button class="btn btn__primary modal__open" data-bs-toggle="modal" data-bs-target="#exampleModal" data-button="Primary School Enquiry" data-name="enquiry">Enquire Now</button>
                                                     </footer>
                                                 </div>
                                             </div>
@@ -225,7 +225,7 @@
                                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, voluptatem illum asperiores tenetur, loerm aasdsad ddak kkdsdsls.
                                                     </p>
                                                     <footer>
-                                                        <button class="btn btn__primary">Enquire Now</button>
+                                                        <button class="btn btn__primary modal__open" data-bs-toggle="modal" data-bs-target="#exampleModal" data-button="Secondary School Enquiry" data-name="enquiry">Enquire Now</button>
                                                     </footer>
                                                 </div>
                                             </div>
@@ -250,7 +250,7 @@
                            </h6>
                        </header>
                        <footer>
-                           <button class="btn btn__primary">Download Brochure</button>
+                           <button class="btn btn__primary modal__open"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-button="Download Brochure" data-name="brochure">Download Brochure</button>
                        </footer>
                     </div>
                 </section>
@@ -267,7 +267,7 @@
                             <div class="col-md-6 section__feature-right">
                                 <section class="h-100">
                                     <article class="h-100 pb-5">
-                                        <header class="section__header p-5 mb-2">
+                                        <header class="section__header py-5 px-md-5 mb-2">
                                             <h2 class="header__text under__line-left">
                                                 AMAZING <strong class="red">FEATURES</strong>
                                             </h2>
@@ -277,7 +277,7 @@
                                         </header>
 
                                         <div class="section__body">
-                                            <div class="section__block pb-4 px-5">
+                                            <div class="section__block pb-4 px-md-5">
                                                 <div class="d-flex">
                                                     <div class="section__left">
                                                         <div class="feature__icon">
@@ -298,7 +298,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="section__block pb-4 px-5">
+                                            <div class="section__block pb-4 px-md-5">
                                                 <div class="d-flex">
                                                     <div class="section__left">
                                                         <div class="feature__icon">
@@ -319,7 +319,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="section__block pb-4 px-5">
+                                            <div class="section__block pb-4 px-md-5">
                                                 <div class="d-flex">
                                                     <div class="section__left">
                                                         <div class="feature__icon">
@@ -561,7 +561,7 @@
                                     <iframe class="iframe__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15551.106943662719!2d77.707586!3d12.986127!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3726afdbb085faa9!2sGopalan%20National%20School!5e0!3m2!1sen!2sin!4v1634890577504!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="p-5 bg-light border">
+                                    <div class="py-5 px-md-5 px-4 bg-light border">
                                         <form method="POST" action="enquiry.php">
                                             <div class="mb-3">
                                             <label for="parent_name" class="form-label">Parent Name</label>
@@ -636,18 +636,49 @@
 
         <div class="section__fixed">
             <div class="sticky__enquiry">
-                <a href="#" class="">
+                <a href="#" class="modal__open" data-bs-toggle="modal" data-bs-target="#exampleModal" data-button="Enquire Now" data-name="enquiry">
                     <i class="fa fa-commenting" aria-hidden="true"></i>
                 </a>
             </div>
         </div>
-        <!--  -->
+        <!-- end section fixed -->
     </div>
     <!-- end body wrap -->
 
     <!-- modal -->
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-header"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                    <form method="POST" action="enquiry.php">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="parent_name" class="form-label">Parent Name</label>
+                            <input type="text" class="form-control" id="parent_name" name="parent_name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="student_name" class="form-label">Student Name</label>
+                            <input type="text" class="form-control" id="student_name" name="student_name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <button type="submit" class="btn btn__primary modal-submit" name="enquiry">Submit</button>
 
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- end modal -->
     
