@@ -1,0 +1,144 @@
+.section__widget {
+    width: 100%;
+    height: 120px;
+    /* background-color: rgba(255, 0, 0, 0.086); */
+}
+
+.widget {
+    width: 50%;
+    padding: 50px 20px 10px;
+    background-color: #0b2739;
+    
+    display: flex;
+    justify-content: space-around;
+
+    position: absolute;
+    top: -50px;
+    right: 10%;
+    z-index: -1;
+}
+
+.widget .section__block {
+    width: 100%;
+    text-align: center;
+}
+
+.widget .section__block figure img {
+    height: 60px;
+}
+
+.widget .section__block h4 {
+    font-family: var(--font-primary);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #8ea7bf;
+    text-transform: uppercase;
+}
+
+/* ======================================
+
+    section card 
+    
+==========================================*/
+.section__card .article__block {
+    /* margin: 0 10px; */
+    padding: 20px 20px 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: ease-in-out 400ms;
+    -webkit-transition: ease-in-out 400ms;
+    -moz-transition: ease-in-out 400ms;
+    -ms-transition: ease-in-out 400ms;
+    -o-transition: ease-in-out 400ms;
+}
+
+.section__card .article__block:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.section__card .article__block figure {
+    padding-bottom: 20px;
+}
+
+.section__card .article__block figure img {
+    height: 80px;
+}
+
+.section__card .article__block p {
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+.section__card .article__block p span {
+    padding-top: 7px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+/* ==================================
+
+    section course
+
+=======================================*/
+.course__block {
+    margin: 0px;
+    padding-bottom: 20px;
+    /* border: 1px solid #8ea7bf; */
+    background: #fff;
+    min-height: 550px;
+}
+.course__block .article__header, .course__block .article__body, .course__block .article__footer {
+    padding: 0px 20px;
+}
+
+/* testimonials
+===================================== */
+.testimonials {
+    /* border-radius: 5px; */
+    /*background-color: #e3e3e3;
+    *//*background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);*/
+    /* background-image: radial-gradient( circle 763px at 18.3% 24.1%,  rgba(255,249,137,1) 7.4%, rgb(235, 203, 98) 58.3% ); */
+   
+}
+
+.testimonial__block {
+    padding: 50px 40px 40px 50px;
+
+    background-color: #0b2739;
+    /* background-image: linear-gradient( 94.3deg,  rgb(199, 159, 79) 10.9%, rgb(186, 144, 60) 87.1% ); */
+    color: rgba(167, 128, 49, 0.414);
+
+    position: relative;
+}
+
+.testimonial__block::before {
+    content: '\f10d';
+    font-family: 'fontawesome';
+    font-size: 50px;
+
+    position: absolute;
+    top: -5px;
+    left: 20px;
+
+}
+
+.testimonial__block .quote__content p{
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #fff;
+
+}
+
+.testimonial__block .quote__detail {
+    /* margin-top: 20px; */
+    padding-top: 20px;
+    position: relative;
+    color: #fff;
+
+}
