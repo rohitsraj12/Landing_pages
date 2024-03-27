@@ -116,7 +116,16 @@
     }
 }
 
-@media(min-width: 769px) {
+@media(min-width: 769px) {    
+
+    .section__pb {
+        padding-bottom: 60px;
+    }
+    
+    .section__mb {
+        margin-bottom: 60px;
+    }
+
     .hamberger, .d__sm, .hamburger {
         display: none;
     }

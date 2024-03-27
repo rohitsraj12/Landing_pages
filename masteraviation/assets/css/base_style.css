@@ -157,6 +157,14 @@ blockquote {
   border-bottom: 1px solid #686e6e;
 }
 
+.section__pb {
+  padding-bottom: 80px;
+}
+
+.section__mb {
+  margin-bottom: 80px;
+}
+
 /* bg color
 ===================================== */
 /* .bg__color-primary {
@@ -476,6 +484,7 @@ blockquote {
   body banner
 
 ===============================*/
+
 .other__banner {
   width: 100%;
   /* height: 250px;

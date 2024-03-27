@@ -85,7 +85,7 @@ $(document).ready(function(){
                 let sectionTop = section.offsetTop;
 
                 console.log(sectionTop);
-                if (scrollY >= sectionTop - 120) {
+                if (scrollY >= sectionTop - 150) {
                     current = section.getAttribute('id');
                 }
             });
