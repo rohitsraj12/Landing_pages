@@ -30,7 +30,7 @@ background: linear-gradient(90deg, rgba(174,39,132,1) 0%, rgba(239,75,89,1) 100%
     --color-white: #ffffff;
     --color-black: #121212;
     --color-theme: rgb(200, 159, 78);
-    --color-theme-1: #20459e;
+    --color-theme-1: #06173e;
     --color-theme-2: #f6c90b;
     --color-theme-3: #001f23;
 
@@ -164,6 +164,12 @@ blockquote {
 .section__mb {
   margin-bottom: 80px;
 }
+
+.bold {
+  font-weight: 700;
+  color: var(--color-theme-1);
+}
+
 
 /* bg color
 ===================================== */
