@@ -2,13 +2,13 @@
 
  <?php
     // $date =  strtotime(date("d-m-y"));
-    $date =  strtotime(date("d-m-y"));
-    $exp_date =  strtotime("3-07-24"); // jully 3
+    // $date =  date("d-m-y");
+    // $exp_date =  date("1-07-24"); // jully 3
     // echo $date . '</br>';
     // echo $exp_date . '</br>';
 
 
-    if($date <= $exp_date){
+    // if($date < $exp_date){
         // echo $date;
     ?>
         <!DOCTYPE html>
@@ -938,13 +938,13 @@
         </body>
         </html>
     <?php
-    } else {
-        echo "3 Month campain has stoped. Please contact admin.";
+    // } else {
+        // echo "3 Month campain has stoped. Please contact admin.";
         ?>
             <!-- 
                 website             :    https://masteraviation.in/#
                 template ref        :    http://preview.themeforest.net/item/hangar-aviation-flight-school-elementor-template-kit/full_screen_preview/33549766?_ga=2.239921739.932150753.1710413267-1916397059.1710413267
             -->
         <?php
-    }
+    // }
 ?>
