@@ -623,6 +623,8 @@
     .widget {
         width: 100%;
         position: static;
+
+        padding: 30px 10px;
     }
     
     .about__img {

@@ -16,7 +16,7 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title></title>
+            <title>WELCOME TO THE MASTER AVIATION</title>
             <meta name="description" content="">
             <meta name="keywords" content="">
             <meta name="author" content="Rohit, rohitwebco@gmaail.com">
@@ -61,9 +61,24 @@
             <link rel="stylesheet" href="assets/css/responsive.css">
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
+            <!-- Google tag (gtag.js) --> 
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-WCBMWRCRKZ"></script>
+            <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-WCBMWRCRKZ'); </script>
+        
+            <!-- Google Tag Manager -->
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-N5824T9M');</script>
+            <!-- End Google Tag Manager -->
         </head>
         <body>
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5824T9M"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+
             <div class="body__wrap section__wrap"  id="home">
                 <div class="body__header" id="body-header">
                     <div class="hamburger">
@@ -734,23 +749,32 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <form method="POST" action="enquiry.php">
-
-                            <div class="modal-body row g-3">
+                            
+                            <div class="modal-body row g-3">                            
+                                <div class="col-12">
+                                    <p class="px-1 pt-2 mb-0">
+                                        Your Aviation adventure awaits you✈️ While we assign you one of our best advisor, explore our website.
+                                    </p>
+                                </div>
                                 <div class="col-md-12">
                                     <label for="first-name" class="form-label">Full Name</label>
                                     <input name="first_name" type="text" class="form-control" id="first-name" placeholder="Full Name" required>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-6">
                                     <label for="email" class="form-label">Email</label>
                                     <input name="email" type="email" class="form-control" id="email" placeholder="Email" required>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-6">
                                     <label for="phone" class="form-label">Phone</label>
                                     <input name="phone" type="tel" class="form-control" id="phone" placeholder="Phone Number" required>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-6">
                                     <label for="last-name" class="form-label">Education Qualification</label>
                                     <input name="edu" type="text" class="form-control" id="last-name" placeholder="Education Qualification" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="last-name" class="form-label">Pincode</label>
+                                    <input name="pincode" type="text" class="form-control" id="last-name" placeholder="Your pincode" required>
                                 </div>
                                 <div class="col-md-12">
                                     <label for="last-name" class="form-label">Course</label>
@@ -763,11 +787,6 @@
                                         <option value="Airport Operation Staff Training">Airport Operation Staff Training</option>
                                     </select>
                                 </div>
-                                <div class="col-md-12">
-                                    <label for="last-name" class="form-label">Pincode</label>
-                                    <input name="pincode" type="text" class="form-control" id="last-name" placeholder="Your pincode" required>
-                                </div>
-
                             </div>
                             <div class="modal-footer">
                                 <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
